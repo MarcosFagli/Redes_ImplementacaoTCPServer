@@ -6,7 +6,7 @@ Trabalho implementado para a disciplina de Redes de Computadores da Universidade
 
 Implementação do protocolo TCP. Este trabalho esta sendo pensado para ser executado em Hardware, utilizando FPGA
 
-## Escopo desta entrega
+## Etapa 1
 
 O objetivo da primeira etapa é adquirir alguma vivência no uso de sockets. Implemente algum protocolo qualquer de camada de aplicação usando sockets TCP ou UDP, na linguagem e na plataforma de sua escolha.
 
@@ -15,6 +15,19 @@ Dê preferência a algum protocolo de camada de aplicação que funcione sobre T
 Note que usar algum programa ou biblioteca pronta não equivale a implementar um protocolo de camada de aplicação! Use diretamente a API de sockets de baixo nível disponível na sua linguagem / plataforma. Durante a aula, mostramos alguns exemplos do uso de sockets TCP em Python.
 
 Caso você opte por alguma plataforma que não tenha suporte nativo a sockets, por exemplo FPGA ou microcontrolador, por enquanto você pode 1) trabalhar apenas com testes unitários; 2) trabalhar com simulação e integrar sockets ao simulador; ou 3) executar sockets em um computador para emular a parte ainda inexistente do circuito, e comunicar-se com a placa de desenvolvimento por meio de algum protocolo simples.
+
+## Etapa 2
+
+Implemente o protocolo TCP. Para obter a nota completa, você deve implementar e exercitar (testar e comprovar que funcionam) os seguintes aspectos do protocolo TCP:
+
+*Estabelecer conexão (handshake SYN, SYN+ACK, ACK) com número de sequência inicial aleatório.
+*Transmitir e receber corretamente os segmentos.
+*Retransmitir corretamente segmentos que forem perdidos ou corrompidos.
+*Estimar o timeout para retransmissão de acordo com as recomendações do livro-texto (RFC 2988).
+*Implementar a semântica para timeout e ACKs duplos de acordo com as recomendações do livro-texto.
+*Tratar e informar corretamente o campo window size, implementando controle de fluxo.
+*Realizar controle de congestionamento de acordo com as recomendações do livro-texto (RFC 5681).
+*Fechar a conexão de forma limpa (lidando corretamente com a flag FIN).
 
 ## Instruções para execução (Testado para o linux Mint 19)
 
