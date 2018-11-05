@@ -20,14 +20,14 @@ Caso você opte por alguma plataforma que não tenha suporte nativo a sockets, p
 
 Implemente o protocolo TCP. Para obter a nota completa, você deve implementar e exercitar (testar e comprovar que funcionam) os seguintes aspectos do protocolo TCP:
 
-	*Estabelecer conexão (handshake SYN, SYN+ACK, ACK) com número de sequência inicial aleatório.
-	*Transmitir e receber corretamente os segmentos.
-	*Retransmitir corretamente segmentos que forem perdidos ou corrompidos.
-	*Estimar o timeout para retransmissão de acordo com as recomendações do livro-texto (RFC 2988).
-	*Implementar a semântica para timeout e ACKs duplos de acordo com as recomendações do livro-texto.
-	*Tratar e informar corretamente o campo window size, implementando controle de fluxo.
-	*Realizar controle de congestionamento de acordo com as recomendações do livro-texto (RFC 5681).
-	*Fechar a conexão de forma limpa (lidando corretamente com a flag FIN).
+* Estabelecer conexão (handshake SYN, SYN+ACK, ACK) com número de sequência inicial aleatório.
+* Transmitir e receber corretamente os segmentos.
+* Retransmitir corretamente segmentos que forem perdidos ou corrompidos.
+* Estimar o timeout para retransmissão de acordo com as recomendações do livro-texto (RFC 2988).
+* Implementar a semântica para timeout e ACKs duplos de acordo com as recomendações do livro-texto.
+* Tratar e informar corretamente o campo window size, implementando controle de fluxo.
+* Realizar controle de congestionamento de acordo com as recomendações do livro-texto (RFC 5681).
+* Fechar a conexão de forma limpa (lidando corretamente com a flag FIN).
 
 ## Instruções para execução (Testado para o linux Mint 19)
 
